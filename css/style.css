@@ -1,0 +1,79 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #444;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* Sidebar layout */
+aside {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+aside h2 {
+    background-color: #333;
+    color: white;
+    padding: 5px;
+}
+
+aside table {
+    width: 100%;
+    margin-top: 10px;
+    border-spacing: 0;
+}
+
+aside td {
+    padding: 5px;
+}
+
+aside button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Responsive layout */
+@media (min-width: 600px) {
+    main {
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        gap: 10px;
+    }
+}
